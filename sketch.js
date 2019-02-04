@@ -21,6 +21,6 @@ function draw() {
     p[1] > height ? p[1] = height : null;
     p[1] < 0 ? p[1] = 0 : null;
     ellipse(p[0],p[1],width/10)
-    acc[0] > 0 ? acc[0] -= 0.01 : acc[0] += 0.01;
-    acc[1] > 0 ? acc[1] -= 0.01 : acc[1] += 0.01;
+    acc[0] > 0 ? acc[0] -= 0.0001 : acc[0] += 0.0001;
+    acc[1] > 0 ? acc[1] -= 0.0001 : acc[1] += 0.0001;
 }
