@@ -12,8 +12,8 @@ function setup() {
 function draw() {
   // put drawing code here
     background('#fff5')
-    acc[0] = accelerationX;
-    acc[1] = accelerationY;
+    acc[0] += accelerationX;
+    acc[1] += accelerationY;
     p[0] += acc[0];
     p[1] += acc[1];
     p[0] > width ? p[0] = width : null;
